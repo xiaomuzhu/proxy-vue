@@ -30,7 +30,7 @@ const Observer = obj => {
  * 将对象转为监听对象
  * @param {*} obj 要监听的对象
  */
-function observify(obj) {
+export default function observify(obj) {
   if (!isObject(obj)) {
     return obj;
   }
