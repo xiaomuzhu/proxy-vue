@@ -1,6 +1,6 @@
 import observify from './observer';
 import Compile from './compile';
-import {foreach} from './util';
+import {foreach} from './utils';
 import Dep from './dep';
 
 export default class Vue {

@@ -30,7 +30,7 @@ export default class Compile {
     const {_attrs, _elem} = this;
     Object.keys(_attrs).forEach(attr => {
       if (attr.includes('@')) {
-      } else if (attr.includes('-')) {
+      } else if (attr.includes(':')) {
         this._bindDirectives(attr, _elem);
       } else {
         _elem.setAttribute(attr, _attrs[attr]);

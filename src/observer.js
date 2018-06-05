@@ -1,5 +1,5 @@
 import Dep from './dep';
-import {isObject} from './util';
+import {isObject} from './utils';
 
 /**
  * [Observer description] 监听器,监听对象的属性,触发后通知订阅
@@ -19,7 +19,7 @@ const Observer = obj => {
       if (Reflect.get(receiver, key) === value) {
         return;
       }
-      const res = Reflect.set(target, key, observe(value), receiver);
+      const res = Reflect.set(target, key, observify(value), receiver);
       dep.notify(key);
       return res;
     },
