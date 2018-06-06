@@ -11,6 +11,9 @@ const vm = new Vue({
     change() {
       return this.msg;
     },
+    click() {
+      return this.msg;
+    },
   },
   render(createElement) {
     return createElement.div(

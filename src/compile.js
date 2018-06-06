@@ -30,6 +30,7 @@ export default class Compile {
     const {_attrs, _elem} = this;
     Object.keys(_attrs).forEach(attr => {
       if (attr.includes('@')) {
+        // TODO
       } else if (attr.includes(':')) {
         this._bindDirectives(attr, _elem);
       } else {
@@ -64,6 +65,7 @@ export default class Compile {
     const {_attrs, _vm} = this;
     const exp = _attrs[attr];
     const type = attr.slice(1);
+
     compileUtil[type](_elem, _vm, exp);
   }
 }

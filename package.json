@@ -1,7 +1,7 @@
 {
   "name": "proxy-vue",
   "version": "0.0.1",
-  "description": "",
+  "description": "基于proxy的响应式系统",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --colors --inline --history-api-fallback"
